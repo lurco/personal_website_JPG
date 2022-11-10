@@ -1,18 +1,21 @@
 :root {
-    --bg-color: #152028;
-    --txt-color: #eeeeee;
+    /*--bg-color: #152028;*/
+    --bg-color: #eee;
+    /*--txt-color: #eeeeee;*/
+    --txt-color: #000;
     --a-color: #6086b4;
-    --hover-color: #406694;
+    --hover-color: #204674;
     --font: 'IBM Plex Sans';
 }
 
 body, html {
     font-size: 16px;
-    background-color: #000;
+    /*background-color: #000;*/
+    background-color: #eee;
 }
 
 .layout {
-    background-color: rgba(255, 255, 255, 0.4);
+    /*background-color: rgba(255, 255, 255, 0.4);*/
     display: grid;
     grid-template: 8vh calc(92vh - 1px) / 40vw calc(60vw - 1px);
     grid-gap: 1px;
@@ -105,14 +108,7 @@ body, html {
     background-color: var(--txt-color);
 }
 
-.main .link {
-    color: var(--a-color);
-    font-family: var(--font), sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-.menu .menu__item.menu__item:hover, .link:hover {
+.menu .menu__item.menu__item:hover {
     /*background-color: tan;*/
     color: var(--hover-color);
     transition: color 200ms;
@@ -132,14 +128,61 @@ body, html {
 }
 
 /***** main *****/
-.about {
+.about, .research, .contact, .cv, .systema {
     /*background-color: royalblue;*/
     margin: 0;
 }
 
-.about__p {
+.research__hdl, .contact__hdl {
+    color: var(--txt-color);
+    font-family: var(--font), sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+
+.main .link {
+    color: var(--a-color);
+    font-family: var(--font), sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+.link:hover {
+    /*background-color: tan;*/
+    color: var(--hover-color);
+    transition: color 200ms;
+}
+
+
+.article-list, .project-list {
+
+}
+
+.contact__line {
+}
+
+.reference-details {
+
+}
+
+.journal {
+    font-style: italic;
+}
+
+.status {
+    font-style: italic;
+
+}
+
+.about__p, .systema__p {
     margin-top: 0;
     /*background-color: darkcyan;*/
+}
+
+.systema__em {
+    font-style: normal;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1200px) {
