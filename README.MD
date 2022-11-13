@@ -6,4 +6,4 @@
 2. Responsive design (RWD)
 3. Simplistic but stylish design (based on a [Hugo theme Anatole theme](https://github.com/lxndrblz/anatole) by lxndrblz)
 
-visit the finished webpage at [https://www.grodniewicz.pl](grodniewicz.pl)
+visit the finished webpage at [grodniewicz.pl]https://www.grodniewicz.pl)
